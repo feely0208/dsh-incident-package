@@ -51,6 +51,8 @@ dsh plugin --profile web add @deepwhale-cn/dsh-incident-package
 npx @deepwhale-cn/dsh-incident-package
 ```
 
+![dsh-incident-package 的检查报告示例](https://raw.githubusercontent.com/feely0208/dsh-incident-package/main/docs/report.png)
+
 ## 用法
 
 ```bash
