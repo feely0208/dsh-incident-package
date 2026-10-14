@@ -1,0 +1,14 @@
+{
+  "id": "INCIDENT-NO-CONTACT",
+  "title": "找不到安全事件应急联系人",
+  "severity": "medium",
+  "source": "《中华人民共和国网络安全法》第二十五条 —— 发生危害网络安全的事件时，立即启动应急预案；GB/T 22239-2019 第三级 · 安全管理体系（应明确安全事件处置的责任人）",
+  "advice": "找不到应急联系人（安全负责人 / 值班电话 / 上报邮箱）。**出事时最贵的成本是「找不到人」** —— 凌晨三点的泄露事件，如果没人知道该打给谁，黄金处置时间就浪费了。建议在 SECURITY.md 写明：谁、怎么联系、什么情况下联系谁。",
+  "check": {
+    "type": "files-lack",
+    "pattern": "应急联系人|安全负责人|应急值班|事件上报邮箱|security@|incident@|应急电话|24.*小时.*联系|on-?call",
+    "flags": "i",
+    "paths": ["README.md", "SECURITY.md", "docs/*.md", "docs/**/*.md", "*.md", ".well-known/*"],
+    "evidence": "找不到应急联系人信息"
+  }
+}

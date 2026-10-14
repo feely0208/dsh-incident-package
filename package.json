@@ -1,0 +1,64 @@
+{
+  "name": "@deepwhale-cn/dsh-incident-package",
+  "version": "0.1.0",
+  "description": "查出了事能不能拿出证据：预案、联系人、日志保全、上报流程 —— 平时不备，事到临头就晚了",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "skill",
+    "security",
+    "guard",
+    "incident-package",
+    "incident-response",
+    "emergency-plan",
+    "应急预案",
+    "应急响应",
+    "证据保全",
+    "事件上报",
+    "网络安全法"
+  ],
+  "files": [
+    "lib",
+    "skill",
+    "bin",
+    "rules",
+    "docs",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-incident-package": "./bin/cli.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.1.0-rc.6",
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepwhale-cn/dsh-guard-core": "^0.9.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-skill": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feely0208/dsh-incident-package.git"
+  },
+  "homepage": "https://www.deepwhale.org.cn/skills.html",
+  "bugs": {
+    "url": "https://github.com/feely0208/dsh-incident-package/issues"
+  }
+}
