@@ -51,7 +51,11 @@ dsh plugin --profile web add @deepwhale-cn/dsh-incident-package
 npx @deepwhale-cn/dsh-incident-package
 ```
 
-![dsh-incident-package 的检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-incident-package/report.png)
+![dsh-incident-package 检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-incident-package/report.png)
+
+![dsh-incident-package 演示模式输出](https://www.deepwhale.org.cn/plugin-assets/dsh-incident-package/demo.png)
+
+![dsh-incident-package 规则与依据](https://www.deepwhale.org.cn/plugin-assets/dsh-incident-package/rules.png)
 
 ## 用法
 
