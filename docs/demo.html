@@ -1,0 +1,65 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#0d0f13; display:flex; justify-content:center;
+         align-items:flex-start; padding:22px; font-family:-apple-system,"PingFang SC",
+         "Helvetica Neue",sans-serif; }
+  .win { width:1180px; border-radius:11px; overflow:hidden;
+          box-shadow:0 14px 44px rgba(0,0,0,.55); }
+  .bar { background:#2a2d34; padding:11px 15px; display:flex; align-items:center; gap:9px; }
+  .dot { width:12px; height:12px; border-radius:50%; }
+  .t { margin-left:11px; color:#7a8290; font-size:13px; letter-spacing:.02em; }
+  .term { background:#1b1d22; padding:20px 22px 24px; font-family:"SF Mono",Menlo,Consolas,
+           "PingFang SC",monospace; font-size:13.5px; line-height:1.72; }
+  .cmd { color:#5ee08a; margin-bottom:13px; font-size:13.5px; }
+  .cmd b { color:#fff; font-weight:600; }
+  .l { white-space:pre-wrap; word-break:break-word; }
+</style></head><body>
+  <div class="win">
+    <div class="bar">
+      <span class="dot" style="background:#ff5f57"></span>
+      <span class="dot" style="background:#febc2e"></span>
+      <span class="dot" style="background:#28c840"></span>
+      <span class="t">dsh-incident-package · demo</span>
+    </div>
+    <div class="term">
+      <div class="cmd">$ <b>dsh-incident-package --demo</b></div>
+      <div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  【演示模式】使用内置样本，不是你的真实项目。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  深鲸守护 · 应急证据包 v0.1.0</span></div>
+<div class="l"><span style="color:#d8dee9">  ──────────────────────────────────────────────────────────────────</span></div>
+<div class="l"><span style="color:#d8dee9">  扫描范围   内置演示样本 · 故意有问题的项目</span></div>
+<div class="l"><span style="color:#d8dee9">             2 个文件 · 0 个目录已跳过</span></div>
+<div class="l"><span style="color:#d8dee9">  检查规则   4/4 条</span></div>
+<div class="l"><span style="color:#ffd166">  命中       4 条</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ff6b6b">  【高】2 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 找不到网络安全事件应急预案</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  README.md</span></div>
+<div class="l"><span style="color:#7a8290">      证据  以下文件都不存在：README.md / SECURITY.md / docs/*.md …</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《中华人民共和国网络安全法》第二十五条 —— 网络运营者应当制定网络安全事件应急预案，及时处置系统漏洞、计算机病毒、网络攻击、网络侵入等安全风险；在发生危害网络安全的事件时，立即启动应急预案，采取相应的补救措施，并按照规定向有关主管部门报告；GB/T 22239-2019 第三级 · 安全管理体系 · 安全管理制度（应制定安全事件应急预案）</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  仓库里找不到应急预案。**这是法定要求** —— 网络安全法第 25 条明文规定网络运营者「应当制定」。而且等保测评会直接查这份文件。最低限度：写一份预案，含事件分级、处置流程、责任人、对外沟通口径。</span></div>
+<div class="l"><span style="color:#7a8290">    · 找不到证据保全机制</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  README.md</span></div>
+<div class="l"><span style="color:#7a8290">      证据  以下文件都不存在：README.md / SECURITY.md / docs/*.md …</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《中华人民共和国网络安全法》第二十一条第（三）项 —— 采取监测、记录网络运行状态、网络安全事件的技术措施，并按照规定留存相关的网络日志不少于六个月；GB/T 22239-2019 第三级 · 安全计算环境 · 安全审计（审计记录应受到保护，避免受到未预期的删除、修改或覆盖）</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  代码/配置里找不到**证据保全**机制 —— 出事后需要：日志已被留存（≥6 个月）、日志不可被应用篡改、事件现场可被快照。很多团队有日志，但**日志和业务库在同一台机器、同一个账号下**，攻击者进来一把删掉，事后什么都查不到。建议：日志异地/单向写入、快照可保留。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ffd166">  【中】2 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 找不到安全事件应急联系人</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  README.md</span></div>
+<div class="l"><span style="color:#7a8290">      证据  以下文件都不存在：README.md / SECURITY.md / docs/*.md …</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《中华人民共和国网络安全法》第二十五条 —— 发生危害网络安全的事件时，立即启动应急预案；GB/T 22239-2019 第三级 · 安全管理体系（应明确安全事件处置的责任人）</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  找不到应急联系人（安全负责人 / 值班电话 / 上报邮箱）。**出事时最贵的成本是「找不到人」** —— 凌晨三点的泄露事件，如果没人知道该打给谁，黄金处置时间就浪费了。建议在 SECURITY.md 写明：谁、怎么联系、什么情况下联系谁。</span></div>
+<div class="l"><span style="color:#7a8290">    · 找不到事件上报流程</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  README.md</span></div>
+<div class="l"><span style="color:#7a8290">      证据  以下文件都不存在：README.md / SECURITY.md / docs/*.md …</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《中华人民共和国网络安全法》第二十五条 —— 在发生危害网络安全的事件时，立即启动应急预案，采取相应的补救措施，并按照规定向有关主管部门报告；《数据安全法》第二十九条 —— 发生数据安全事件，应当立即采取处置措施，并按照规定及时告知用户并向有关主管部门报告</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  找不到事件上报流程。**这是两条法律的共同要求**（网安法第 25 条 + 数据安全法第 29 条）—— 而且数据安全法还多一条：**要及时告知用户**。建议预案里写明：什么级别的事件、多久内、报给谁（主管部门 + 受影响用户）。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  ──────────────────────────────────────────────────────────────────</span></div>
+    </div>
+  </div>
+</body></html>
