@@ -23,6 +23,8 @@ logger.info('app started');
 **平时不备，事到临头就晚了。** 而这些都是**可以提前自查**的。
 
 ## 关键词
+**应急响应**：出了事能不能拿出证据 —— 预案、联系人、日志保全、上报流程，平时不备，事到临头就晚了。
+
 **关键词**：应急预案 · 应急响应 · 应急联系人 · 证据保全 · 事件上报 · 日志留存 · 网络安全法 · 数据安全法
 **Keywords**: incident response · emergency plan · evidence preservation · incident reporting · CSL · DSL
 
