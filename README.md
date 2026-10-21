@@ -1,5 +1,7 @@
 # @deepwhale-cn/dsh-incident-package
 
+[![dshfind 收录](https://dshfind.com/api/badge/feely0208/dsh-incident-package?lang=zh)](https://dshfind.com/zh/plugins/feely0208/dsh-incident-package)
+
 **应急证据包** —— 查出了事能不能拿出证据：预案、联系人、日志保全、上报流程。
 
 ## 不装它会怎样
